@@ -3,18 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Arsathparves - Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            text-align: center;
+            background-color: #f4f4f4;
         }
         header {
-            background-color: #333;
+            background-color: #222;
             color: white;
-            padding: 10px 0;
+            padding: 20px;
+            text-align: center;
+            font-size: 26px;
+            font-weight: bold;
+        }
+        nav {
+            text-align: center;
+            background: #444;
+            padding: 15px 0;
         }
         nav ul {
             list-style: none;
@@ -22,82 +30,120 @@
         }
         nav ul li {
             display: inline;
-            margin: 0 15px;
+            margin: 0 20px;
         }
         nav ul li a {
             color: white;
             text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        nav ul li a:hover {
+            color: #00c3ff;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
         }
         section {
+            background: white;
             padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
         }
-        .project {
-            border: 1px solid #ddd;
-            padding: 10px;
-            margin: 10px auto;
-            width: 50%;
+        section:hover {
+            transform: scale(1.02);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        .info {
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .contact {
+            text-align: center;
+            font-size: 18px;
+            background: #222;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .contact a {
+            color: #00c3ff;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#achievements">Achievements</a></li>
-                <li><a href="#hobbies">Hobbies</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <header>Arsathparves - Portfolio</header>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p class="info">Hello! My name is Arsathparves, a passionate and dedicated technology enthusiast. I am 20 years old and currently pursuing a Bachelor of Technology (B.Tech) in Information Technology. I have a strong interest in web development, problem-solving, and software engineering, always striving to learn and innovate.</p>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <p class="info"><strong>High School:</strong> Gd matric hr.sec.school</p>
+            <p class="info"><strong>College (UG):</strong> Sri Krishna College of Engineering and Technology</p>
+        </section>
+
+        <section id="achievements">
+            <h2>Achievements</h2>
+            <ul class="info">
+                <li>Solved 50+ Leetcode problems</li>
+                <li>Participated in several hackathons</li>
+                <li>Certified Full-Stack Developer</li>
+                <li>Winner of AI Coding Competition</li>
             </ul>
-        </nav>
-    </header>
-    
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm a passionate web developer. I create beautiful and functional websites.</p>
-    </section>
-    
-    <section id="education">
-        <h2>Education</h2>
-        <p>Bachelor's Degree in Computer Science - XYZ University</p>
-    </section>
-    
-    <section id="achievements">
-        <h2>Achievements</h2>
-        <ul>
-            <li>Won Best Web Developer Award 2023</li>
-            <li>Certified Full-Stack Developer</li>
-            <li>Completed 50+ Successful Projects</li>
-        </ul>
-    </section>
-    
-    <section id="hobbies">
-        <h2>Hobbies</h2>
-        <ul>
-            <li>Coding</li>
-            <li>Photography</li>
-            <li>Gaming</li>
-            <li>Traveling</li>
-        </ul>
-    </section>
-    
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>Description of project 1.</p>
-        </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>Description of project 2.</p>
-        </div>
-    </section>
-    
-    <section id="contact">
+        </section>
+        
+        <section id="hobbies">
+            <h2>Hobbies</h2>
+            <ul class="info">
+                <li>Coding</li>
+                <li>Photography</li>
+                <li>Gaming</li>
+                <li>Traveling</li>
+                <li>Blog Writing</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul class="info">
+                <li><strong>Portfolio Website:</strong> Designed and built a personal portfolio website using HTML, CSS, and JavaScript.</li>
+                <li><strong>Web-based To-Do App:</strong> Developed a task management application with a user-friendly interface.</li>
+                <li><strong>E-Commerce Website:</strong> Created a fully functional e-commerce platform with payment integration.</li>
+                <li><strong>AI Chatbot:</strong> Developed a chatbot using machine learning and natural language processing.</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer class="contact">
         <h2>Contact</h2>
-        <p>Email: your.email@example.com</p>
-    </section>
+        <p>Email: <a href="mailto:arsathparves@gmail.com">arsathparves@gmail.com</a></p>
+        <p>Mobile: +91 98765 43210</p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/arsathparves" target="_blank">linkedin.com/in/arsathparves</a></p>
+        <p>&copy; 2024 Arsathparves's Portfolio</p>
+    </footer>
 </body>
 </html>
